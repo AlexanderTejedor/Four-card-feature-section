@@ -64,14 +64,27 @@
     border-radius: .5rem;
     padding: 2rem;
     margin-bottom: 2rem;
+    box-shadow: 0px 30px 30px -22px hsla(212, 86%, 64%, 0.231);;
 }
 .card h2{
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 1.3rem;
+    font-weight: 600;
     color: var(--grey-500);
-    margin-bottom: 1rem;
+    margin-bottom: .3rem;
 }
-.card::before {
+.card p{
+    font-size: .9rem;
+    font-weight: 200;
+    color: var(--grey-500);
+    margin-bottom: 2rem;
+}
+.card figure{
+    align-self: end;
+}
+.card__image--supervisor::before,
+.card__image--teamBuilder::before,
+.card__image--karma::before,
+.card__image--claculator::before{
     content: '';
     position: absolute;
     top: 0;
@@ -81,4 +94,13 @@
     background-color: var(--red);
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
+}
+.card__image--supervisor::before{
+    background-color: var(--cyan);
+}
+.card__image--karma::before{
+    background-color: var(--orange);
+}
+.card__image--claculator::before{
+    background-color: var(--blue);
 }
